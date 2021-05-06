@@ -1,3 +1,6 @@
+// grouping our messages allows us to
+// 1. find and edit messages quicker
+// 2. change out our messages based off different languages
 export default {
   signUpSuccess: 'Succesfully registered! You\'ve been signed in as well.',
   signUpFailure: 'Registration failed. Email may be taken, or passwords don\'t match.',

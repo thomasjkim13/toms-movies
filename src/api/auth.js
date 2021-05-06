@@ -1,8 +1,13 @@
 import apiUrl from '../apiConfig'
+// import axios so we can make HTTP requests
 import axios from 'axios'
 
+// the credentials parameter has the same format as `this.state` in SignUp.js
+// we want to export multiple things from this file, so we are using a 'named export'
+// instead of a 'default export'
 export const signUp = credentials => {
   return axios({
+    // the method and url will both be the same as the jquery-ajax-token-auth lesson
     method: 'POST',
     url: apiUrl + '/sign-up',
     data: {
