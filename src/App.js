@@ -79,7 +79,7 @@ class App extends Component {
     return (
       // We want to render multiple elements, so we wrap them in a Fragment
       <Fragment>
-        {/* This is our navigation bar at the top of the page. */}
+        {/* This is our navigation bar at the top of the page. we pass down the `user` so we can show their email address and show different links if they are signed in or not. */}
         <Header user={user} />
         {/* Turn each message alert, into an AutoDismissAlert component. To show
             the user a message */}

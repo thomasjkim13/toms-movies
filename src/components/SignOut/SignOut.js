@@ -18,6 +18,7 @@ class SignOut extends Component {
       .finally(() => clearUser())
   }
 
+  // We never want to show the signOut component. We want to be signed out and redirected if anyone goes to /sign-out so we retuurn a falsy value('')
   render () {
     return ''
   }

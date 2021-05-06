@@ -43,11 +43,14 @@ export const signOut = user => {
   })
 }
 
+// the passwords parameter is `this.state` from ChangePassword. the oldPassword and the newPassword
 export const changePassword = (passwords, user) => {
   return axios({
+    // same url and method as the jquery-ajax-token-auth lesson
     url: apiUrl + '/change-password',
     method: 'PATCH',
     headers: {
+      // similar to the authorization header from the jquery-ajax-token-auth lesson except the `user` is a parameter, instead of coming from store.user
       'Authorization': `Token token=${user.token}`
     },
     data: {
